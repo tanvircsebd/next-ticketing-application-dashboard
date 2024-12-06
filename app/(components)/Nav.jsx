@@ -27,7 +27,7 @@ const Nav = () => {
 
       {/* User Information */}
       <div>
-        <p className="text-default-text">jake.lower17@gmail.com</p>
+        <p className="text-default-text">n01532744@humber.ca</p>
       </div>
     </nav>
   );
