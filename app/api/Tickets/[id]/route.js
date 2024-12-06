@@ -15,11 +15,10 @@ export async function PUT(req, { params }) {
     const body = await req.json();
     const ticketData = body.formData;
 
-    // Ensure that status and other fields are updated
     const updatedTicket = await Ticket.findByIdAndUpdate(
       id,
       { ...ticketData },
-      { new: true } // Return the updated document
+      { new: true } 
     );
 
     // return NextResponse.json({ message: "Ticket updated" }, { status: 200 });
